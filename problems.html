@@ -19,6 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
           rel="stylesheet"
     >
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <title>Ocean Discovery</title>
     <style>
         *{
@@ -30,13 +33,18 @@
         .h1:hover{
             letter-spacing: 3.5px;
         }
+        .card img{
+            height: 200px;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body class="bg-dark text-light">
     <div class="container">
         <hr>
         <header class="text-center">
-            <a href="index.html"><img src="assets/img/Dolphin_Rescue_co.-removebg-preview.png" alt="logo" width="100" height="100"></a>            <h3>Deep Ocean Discovery</h3>
+            <a href="index.html"><img src="assets/img/Dolphin_Rescue_co.-removebg-preview.png" alt="logo" width="100" height="100"></a>
+            <h3>Deep Ocean Discovery</h3>
             <p>Let's discover ocean secrets</p>
         </header>
         <nav class="d-flex flex-wrap justify-content-center">
@@ -45,24 +53,31 @@
             </a>
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="index.html" class="nav-link text-light">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link active text-light">About</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-light">About</a></li>
                 <li class="nav-item"><a href="ocean_zones.html" class="nav-link text-light">Ocean Zones</a></li>
                 <li class="nav-item"><a href="quotes.html" class="nav-link text-light">Quotes</a></li>
-                <li class="nav-item"><a href="problems.html" class="nav-link text-light">Contact Us</a></li>
+                <li class="nav-item"><a href="problems.html" class="nav-link text-light active">Contact Us</a></li>
             </ul>
         </nav>
         <hr>
-        <h1 class="h1 text-center">ABOUT</h1>
-        <div class="main-content mt-5">
-            <p class="text-center" style="line-height: 35px;">
-                Deep Ocean Discovery is your gateway to the breathtaking mysteries of the underwater world, a realm teeming with life, history, and raw geological power. Our mission is to unveil the beauty and secrets of the ocean, from the colorful reefs bursting with marine diversity to the dark abyss where ancient shipwrecks lie silently, telling stories of adventure, triumph, and tragedy.
-                <br><br>
-                Step into the depths as we explore the incredible ecosystems that sustain life on Earth, showcasing the intricate balance of nature and the remarkable creatures that call the ocean home. Discover the haunting allure of shipwrecks—vessels lost to time but rich with tales of human courage, ambition, and misfortune. These underwater relics serve as windows into the past, connecting us to a world long gone yet deeply intertwined with our present.
-                <br><br>
-                But the journey doesn’t stop there. Beneath the ocean’s surface, the planet’s fiery heart reveals itself through underwater volcanoes, powerful natural phenomena that shape the seafloor, create islands, and give rise to new ecosystems. Their dramatic activity reminds us of Earth’s dynamic forces, sparking awe and curiosity about the world’s ongoing evolution.
-                <br><br>
-                At Deep Ocean Discovery, we blend science, history, and storytelling to bring the ocean’s hidden wonders to life. Whether you’re passionate about marine life, captivated by maritime history, or fascinated by Earth’s geological marvels, we offer a space to explore, learn, and connect with the planet’s most enigmatic frontier. Join us as we dive into the unknown, embracing the adventure and discovery that awaits in the depths of the ocean. Let’s discover the secrets of the deep together!
-            </p>
+        <h1 class="h1 text-center" style="text-transform: uppercase;">Contact Us</h1>
+        <div class="main-content mt-5 text-center d-flex justify-content-center">
+            <div class="card bg-dark text-light me-5" style="width: 18rem;border: 1px solid #5e5e5e;">
+                <img src="assets/img/gforms.png" class="card-img-top" alt="Google Forms">
+                <div class="card-body">
+                  <h5 class="card-title">Google Forms</h5>
+                  <p class="card-text">To contact with us, we have a option for google forms. Fill up the form to share your ideas or bug</p>
+                  <a href="#" class="btn btn-primary">Fill up now</a>
+                </div>
+            </div>
+            <div class="card bg-dark text-light" style="width: 18rem;border: 1px solid #5e5e5e;">
+                <img src="assets/img/email.png" class="card-img-top" alt="Google Forms">
+                <div class="card-body">
+                  <h5 class="card-title">Contact with Email</h5>
+                  <p class="card-text">Can't contact with google forms? Well, we have email to contact. Contact with us with email <mark class="bg-secondary">h.codingal@gmail.com</mark></p>
+                  <a href="mailto:h.codingal@gmail.com" class="btn btn-primary">Contact Now</a>
+                </div>
+            </div>
         </div>
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <p class="col-md-4 mb-0 text-light">© 2024 Raaeid Akram</p>
@@ -81,5 +96,7 @@
             <p class="mt-3">Contact: h.codingal@gmail.com</p>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init()</script>
 </body>
 </html>
